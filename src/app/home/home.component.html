@@ -1,0 +1,42 @@
+<div class="header">
+  <div class="logo-section">
+    <button class="icon-button">
+      <i class="bi bi-list icon-button-content"></i>
+    </button>
+  
+    <i class="light-icon bi bi-lightbulb-fill"></i>
+  </div>
+  
+
+  <div class="search-section">
+    <input class="search-input" placeholder="Search..."/>
+
+    <button class="search-button">
+      <i class="bi bi-search"></i>
+    </button>
+  </div>
+
+  <div class="user-section">
+    <button class="notification-button icon-button">
+      <i class="notification-icon bi bi-bell icon-button-content">
+        <div class="notification-badge">9</div>
+      </i>
+    </button>
+    
+    <button class="avatar-button">
+      <i class="bi bi-person-circle"></i>
+    </button>
+  </div>
+  
+</div>
+
+<ul>
+  @for(notification of notifications; track notification.id) {
+    <li>
+      <div>Id: {{ notification.id }}</div>
+      <div>Title: {{ notification.title }}</div>
+      <div>Message: {{ notification.message }}</div>
+      <div>User Id: {{ notification.userId }}</div>
+    </li>
+  }
+</ul>

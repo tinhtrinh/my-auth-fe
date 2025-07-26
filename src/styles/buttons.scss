@@ -1,0 +1,36 @@
+.icon-button {
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.625rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icon-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.2);
+}
+
+.icon-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s ease;
+    z-index: 0;
+}
+
+.icon-button:hover::before {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.icon-button-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+}

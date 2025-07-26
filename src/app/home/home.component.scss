@@ -1,0 +1,74 @@
+.header {
+    height: 7vh;
+    width: 100vw;
+    background-color: gray;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+
+.logo-section {
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .light-icon {
+        color: yellow;
+        font-size: 1.5rem;
+    }
+}
+
+.search-section {
+    width: 30%;
+    display: flex;
+    
+    .search-input {
+        width: 90%;
+        font-size: 1.5rem;
+        border-radius: 1rem 0 0 1rem;
+        padding-left: 1rem;
+        border: none;
+        outline: none;
+    }
+
+    .search-input:focus {
+        border: solid 1px;
+        border-color: blue;
+        outline: none;
+    }
+
+    .search-button {
+        width: 10%;
+        font-size: 1rem;
+        border-radius: 0 1rem 1rem 0;
+        border: none;
+        outline: none;
+        background-color: aqua;
+    }
+}
+
+.user-section {
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+
+    .notification-badge {
+        position: absolute;
+        top: -0.25rem;
+        right: -0.25rem;
+        background-color: red;
+        color: white;
+        padding: 0.125rem 0.375rem;
+        border-radius: 50%;
+        font-size: 0.75rem;
+    }
+
+    .avatar-button {
+        font-size: 1.75rem;
+        background: none;
+        border: none;
+    }
+}
